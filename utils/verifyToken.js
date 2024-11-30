@@ -1,7 +1,6 @@
 import jwt from "jsonwebtoken";
 
 const key = process.env.JWT_SECRET;
-
 const verifyToken = (req, res, next) => {
   const bearerHeader = req.headers.authorization;
 
