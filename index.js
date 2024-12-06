@@ -1,4 +1,3 @@
-import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import "./db.js";
@@ -9,7 +8,7 @@ import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from 'url';  // Import fileURLToPath
 import { dirname } from 'path';       // Import dirname
-
+import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
